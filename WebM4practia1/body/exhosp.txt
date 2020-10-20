@@ -1,0 +1,9 @@
+MetgeCapcalera:{codi(pk),nomComplet(CC),especialitatNom,especialitatEstudisMinims}cc=clave candidata
+Pacient:{numSS(pk),nom,coognom,adreca(cc),dataNaix,metgeCapcaleraCodi(fk)}
+Fabricant:{NIF(pk),nom}
+Medicina:{nom(pk),fabricantNIF(fk)}
+Recepta:{data(pk),qtt,metgeCapcalerCodi(pk,fk),pacientNumSS(pk,fk),medicinaNom(pk,fk)}
+Farmacia:{nom(pk),poblacio}
+Contracta:{dataInici(pk),dataFi,fabricantNIF(pk,fk),farmaciaNom(pk,fk)}ç
+Ven:{preu,medicinaNom(pk,fk),farmaciaNom(pk,fk)}
+Treballador:{DNI(pk),nom,cognom,farmaciaNom(fk)}

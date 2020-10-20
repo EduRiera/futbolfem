@@ -1,0 +1,180 @@
+3.	(Taula del 5) Fer un algoritme que mostri per pantalla la taula del 5. 
+Resposta:
+5 x 0 = 0
+5 x 1 = 5
+5 x 2 = 10
+5 x 3 = 15
+5 x 4 = 20
+5 x 5 = 25
+5 x 6 = 30
+5 x 7 = 35
+5 x 8 = 40
+5 x 9 = 45
+5 x 10 = 50
+
+	var
+		num1: enter		
+	fivar
+	inici
+		num1=0
+		mentre num1>10
+			mostra: num1 x 5
+			num1= num1 + 1
+	fimentre
+	fi
+
+4.	(Taula de multiplicar) Fer un algoritme que mostri per pantalla la taula del número que indiqui l’usuari.
+EL resultat que mostri el vostre programa ha d’esser igual al que s’adjunta com a resposta. Exemple:
+Número: 3
+Resposta:
+3 x 0 = 0
+3 x 1 = 3
+3 x 2 = 6
+3 x 3 = 9
+3 x 4 = 12
+3 x 5 = 15
+3 x 6 = 18
+3 x 7 = 21
+3 x 8 = 24
+3 x 9 = 27
+3 x 10 = 30
+
+	var
+		num1: enter	num2: enter	
+	fivar
+	inici
+		escriu: “escriu un numero”
+		llegeix (num2)
+		num1=0
+		mentre num1>10
+			mostra: ‘num1’ x ‘num2’ =’num1 x num2’
+			num1= num1 + 1
+	fimentre
+	fi
+
+5.	(Parells) Fer un algoritme que mostri tots els nombres parells del 0 al número natural que indiqui l’usuari. Fer l’exercici amb les tres estructures MENTRE, PER i REPETIR
+Per exemple: numero=11 Resposta: 0, 2, 4, 6, 8 i 10
+
+	Var
+		Num1: natural 
+		Num2: enter: natural
+	Fivar
+	Inici
+		Escriu:” escriu un numero major a 0”
+		Llegeix (num1)
+		Num2=0
+		Mentres (num1>=num2)
+			mostra: num2
+			num2= num2 +2
+	fimentres
+6.	(><) Fer un algoritme que demani a l'usuari dos nombres naturals i un caràcter, que pot ser ‘>’ o ‘<’. Llavors, l'algoritme ha de mostrar per pantalla tots els nombres naturals entre els dos introduïts, ordenats de menor a major si el caràcter és ‘>’ o de major a menor si el caràcter és ‘<’
+Per exemple:
+Caràcter: ‘>’
+Primer número: 10     Segon Número: 2
+Resultat: 2 3 4 5 6 7 8 9 10
+Caràcter: ‘>’
+Primer número: 2      Segon Número: 10
+Resultat: 2 3 4 5 6 7 8 9 10
+Caràcter: ‘<’
+Primer número: 10     Segon Número: 2
+Resultat: 10 9 8 7 6 5 4 3 2
+Caràcter: ‘<’
+Primer número: 2      Segon Número: 10
+Resultat: 10 9 8 7 6 5 4 3 2
+
+var
+num1=natural   num2=natural   car=caracter
+fivar 
+
+escriu: “donem un numero”
+llegeix (num1)
+escriu:”< o >”
+llegeix (car)
+escriu: “donem un altre numero”
+llegeix (num2)
+
+si num1<num2
+		si car=< 	repeteix 
+					mostra: num1
+					num1= num1 + 1
+				fins num1>num2
+		sino 		repeteix
+					mostra: num2
+					num2= num2 - 1
+				fins num2<num1
+sino 		
+si car=<	repeteix
+					mostra:num2
+					num2= num2 + 1
+				fins num2>num1		
+		sino 		repeteix
+					mostra: num1
+					num1= num1 – 1
+				fins num1<num2
+fi
+7.	(Suma n) Fer un algoritme que demani a l’usuari un nombre natural. L’algoritme ha de mostrar la suma de tots els nombres entre el 1 i el número introduït per l’usuari. 
+Per exemple: 
+Número: 6 
+Suma dels 6 primers números = 21 
+ 
+
+Var
+	Ant: natural	act: natural	num: natural
+Fivar
+inici
+escriu:” numero”
+llegeix (num)
+act=1 ant=act
+mostra act
+mentre act>num
+		act= act+ant
+		mostra ‘act’
+fimentre
+
+fi
+
+
+8.	(Suma parell-senar) Fer un algoritme que demani 10 números enters a l’usuari. El programa ha de mostrar per pantalla la suma de tots els números parells i la suma de tots els números senars introduïts per l’usuari. 
+Exemple: 
+Nombres introduits per l’usuari: 1 5 7 8 2 4 5 8 4 6
+Resultat: Total parells: 32; Total senars: 18
+9.	(Suma2al100) : Sumar els números parells compresos entre el 2 i el 100.
+Resultat: 2250
+10.	(MitjaAritmetica): Calcula la mitjana aritmètica de n valors introduïts per l’usuari. Finalitzarem d’introduir nombres quan l’usuari introdueixi un -1. Considerarem que tots els números introduïts són enters.
+Exemple: 
+Nombres introduits per l’usuari: 1 5 7 4 2 4 5 8 4 6 -1
+Resultat: Mitja aritmetica del (10) numeros itnroduits: 4.6
+11.	(MesGranMesPetit): Calcula el numero més gran i més petit dels números introduïts per teclats.  Acabem d’introduir números quan l’usuari ens introdueixi el 0. EL 0 no s’ha de tenir en compte, és una marca final.
+Exemple: 
+Nombres introduits per l’usuari: 1 5 7 4 2 4 5 8 4 6 0
+Resultat: Maxim: 8; Minim: 1
+
+Nombres introduits per l’usuari: 0
+Resultat: No s’ha introduït cap valor correcta
+
+var
+num1:natural	num2:natural		numalt:natural	numbaix:natural
+fivar
+numalt=0
+numbaix=0
+mentre num1!==0 o num2!==0
+		escriu un valor
+llegeix (num1)
+escriu un valor
+llegeix (num2)
+si num1>num2 
+				si numalt> num1
+					numalt=numalt
+sino numalt=num1 
+				si numvaix<num2
+					numbaix=numbaix
+				sino numbaix=num2
+		sino
+				si numalt>num2
+					numalt=numalt
+				sino numalt=num2
+				si numvaix<num1
+					numbaix=numbaix
+				sino numbaix=num1
+fimentres
+mostra: numalt “i” numbaix
